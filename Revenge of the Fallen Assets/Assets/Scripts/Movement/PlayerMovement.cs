@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _jumpPower = 0.25f;
     [SerializeField] private InputAction _movementInput;
 
+    [SerializeField] private Collider enemyCollider;
+    
     private CharacterController _characterController;
 
     private float _currentSpeed = 5f;
@@ -110,27 +112,38 @@ public class PlayerMovement : MonoBehaviour
             _heightMovement.y = 0f;
         }
     }
-    
-    
 
-    private void OnCollisionEnter(Collision other)
+    void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        Debug.Log("   hahahahahahahahahah    ");
-        CheckEnemyCollision(other);
+        
+        Debug.Log(hit.collider.name);
+        
+        CheckEnemyCollision(hit.gameObject);
+        
     }
 
-    private void CheckEnemyCollision(Collision other)
+    private void CheckEnemyCollision(GameObject otherGameObject)
     {
-        if (other.transform.tag == "RubberEnemy")
+        Debug.Log(otherGameObject.name);
+        if (otherGameObject.CompareTag("RubberEnemy"))
         {
-            StartCoroutine("DieAndRestart");
+            Debug.Log("hahahahahahahahahah");
+
+            Die(otherGameObject);
+            //StartCoroutine("DieAndRestart");
         }
     }
 
-    IEnumerator DieAndRestart()
+    private void Die(GameObject gameObject)
+    {
+        Destroy(gameObject);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    /*IEnumerator DieAndRestart()
     {
         Destroy(_player);
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    }*/
 }
