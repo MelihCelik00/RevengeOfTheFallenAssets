@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: 1f58ccd7fd14840b39787ffb0f061968
+guid: f0340504b61896e4bb921f95f77fdb78
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 8714144724994952980
-    second: evil_silgi-export_25
-  - first:
-      213: -2993920383380788297
-    second: evil_silgi-export_0
-  - first:
-      213: -4517432821438659583
-    second: evil_silgi-export_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -96,76 +87,25 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: evil_silgi-export_25
-      rect:
-        serializedVersion: 2
-        x: 680
-        y: 385
-        width: 132
-        height: 204
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41f0ba6357cdee870800000000000000
-      internalID: 8714144724994952980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: evil_silgi-export_0
-      rect:
-        serializedVersion: 2
-        x: 1039
-        y: 385
-        width: 132
-        height: 204
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bb69c616457376d0800000000000000
-      internalID: -2993920383380788297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: evil_silgi-export_1
-      rect:
-        serializedVersion: 2
-        x: 1412
-        y: 383
-        width: 132
-        height: 204
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 104457588cade41c0800000000000000
-      internalID: -4517432821438659583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: dfea07c15617d79438231a7fdb8a2ac0
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
